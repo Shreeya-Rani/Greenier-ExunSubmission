@@ -16,7 +16,7 @@
         <div class="logo">
             <h1><span>Green</span>ier</h1>
         </div>
-        <nav>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -25,14 +25,26 @@
         </nav>
         <div class="links">
             <a href="#">Sign Up</a>
-            <a href="#">Contact</a>
+            <a href="#" class="fill">Contact</a>
         </div>
+
+        <nav class="mobile-nav">
+            <ul id="sidemenu">
+                <li><a href="#" onclick="closemenu()">Home</a></li>
+                <li><a href="#" onclick="closemenu()">About</a></li>
+                <li><a href="#" onclick="closemenu()">Team</a></li>
+                <li><a href="#" onclick="closemenu()">Sign Up</a></li>
+                <li><a href="#" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
     </div>
 
     <!-- Hero Section -->
     <div class="hero">
         <div class="hero-txt">
-            <h3>"A wonderful quote related to Sustainable Development"</h3>
+            <h3>"A wonderful quote related to <br><span>Sustainable Development</span>"</h3>
             <div class="socials">
                 <a href="https://www.instagram.com/shreeyaraniofficial/"> <i class="fa-brands fa-instagram"></i></a>
                 <a href="https:youtube.com"> <i class="fa-brands fa-youtube"></i></a>
@@ -42,31 +54,44 @@
             </div>
         </div>
         <div class="hero-img">
-            <img scr="https://dummyimage.com/600x400/" alt="An Image related to Sustainable Development">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="An Image related to Sustainable Development">
         </div>
     </div>
 
     <!-- About Section -->
     <div class="about">
         <div class="title">
-            <h1>About Us</h1>
+            <h1><span>About</span> Us</h1>
         </div>
-        <div class="about-img">
-            <img scr="https://dummyimage.com/600x400/">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://dummyimage.com/600x400/">
+            </div>
+            <div class="about-txt">
+                <h4>Hi, we are <span>Green</span>ier</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet. Mollitia exercitationem similique quia quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet.</p>
+                <p> Mollitia exercitationem similique quia quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet. Mollitia exercitationem similique quia quisquam.</p>
+            </div>
         </div>
-        <div class="about-txt">
-            <h4>Hi, we are <span>Green</span>ier</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet. Mollitia exercitationem similique quia quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet. Mollitia exercitationem similique quia quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam in veritatis quam odio officia ex illum asperiores voluptatibus facilis, saepe fugiat? Officia, accusamus amet. Mollitia exercitationem similique quia quisquam.</p>
-            <div class="about-more">
-                <ul>
-                    <li>Mission</li>
-                    <li>Vission</li>
-                </ul>
-                <div class="about-more-txt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae repudiandae, nisi voluptatibus error quisquam sequi, magnam consectetur, neque laudantium et nemo. Iste recusandae veniam, repudiandae ab fuga totam sit.</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae repudiandae, nisi voluptatibus error quisquam sequi, magnam consectetur, neque laudantium et nemo. Iste recusandae veniam, repudiandae ab fuga totam sit.</p>
-                </div>
+        
+    </div>
+    <div class="mis-vis">
+        <div class="mis-vis-box">
+            <div class="sub-title">
+                <h1>Our <span>Mission</span></h1>
+            </div>
+            <div class="mis-vis-cnt">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate quibusdam neque ad corporis? Tempore consequuntur fugiat natus, cupiditate est officia et corporis esse quaerat commodi voluptate vel temporibus dignissimos?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate quibusdam neque ad corporis? Tempore consequuntur fugiat natus, cupiditate est officia et corporis esse quaerat commodi voluptate vel temporibus dignissimos?</p>
+            </div>
+        </div>
+        <div class="mis-vis-box">
+            <div class="sub-title">
+                <h1>Our <span>Vision</span></h1>
+            </div>
+            <div class="mis-vis-cnt">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate quibusdam neque ad corporis? Tempore consequuntur fugiat natus, cupiditate est officia et corporis esse quaerat commodi voluptate vel temporibus dignissimos?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate quibusdam neque ad corporis? Tempore consequuntur fugiat natus, cupiditate est officia et corporis esse quaerat commodi voluptate vel temporibus dignissimos?</p>
             </div>
         </div>
     </div>
@@ -74,22 +99,22 @@
     <!-- Team -->
     <div class="my-team">
         <div class="title">
-            <h1>Our Team</h1>
+            <h1>Our <span>Team</span></h1>
         </div>
         <div class="container">
             <div class="member">
                 <img src="https://dummyimage.com/300x300/">
-                <h3>Name of Member</h3>
+                <h3><span>Name of Member</span></h3>
                 <h4>Role of Member</h4>
             </div>
             <div class="member">
                 <img src="https://dummyimage.com/300x300/">
-                <h3>Name of Member</h3>
+                <h3><span>Name of Member</span></h3>
                 <h4>Role of Member</h4>
             </div>
             <div class="member">
                 <img src="https://dummyimage.com/300x300/">
-                <h3>Name of Member</h3>
+                <h3><span>Name of Member</span></h3>
                 <h4>Role of Member</h4>
             </div>
         </div>
@@ -97,18 +122,24 @@
 
     <!-- Contact Form -->
     <div class="contact">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Message">
-        <input type="Submit">
+        <div class="title">
+            <h1><span>Contact</span> Us</h1>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Message">
+            <input type="Submit" class="submit">
+        </div>
+        
     </div>
 
     <!-- Footer -->
     <footer>
 
         <div class="socials">
-          <a href="https://www.instagram.com/shreeyaraniofficial/"> <i class="fa-brands fa-instagram"></i></a>
-          <a href="https:youtube.com"> <i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/shreeyaraniofficial/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https:youtube.com"> <i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.linkedin.com/in/shreeya-rani-615b6023a/"> <i class="fa-brands fa-linkedin"></i></a>
             <a href="https://twitter.com"> <i  class="fa-brands fa-twitter"></i></a>
             <a href="https://github.com/Shreeya-Rani"> <i class="fa-brands fa-github"></i></a>
@@ -121,4 +152,17 @@
       </footer>
     
 </body>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0px";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-300px";
+    }
+</script>
+
 </html>
